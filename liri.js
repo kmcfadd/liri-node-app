@@ -1,9 +1,10 @@
 require("dotenv").config();
 
-var fs = require('fs')
+var fs = require('fs');
 const axios = require('axios');
 var Spotify = require('node-spotify-api');
 var keys = require("./keys.js");
+var moment = require('moment');
 
 
 var spotify = new Spotify(keys.spotify);
@@ -33,12 +34,21 @@ switch (input) {
 
 function getConcert() {
 
-    bandTitle = process.argv.slice(3)
+    artist = process.argv.slice(3).join("+")
 
-    axios.get('https://rest.bandsintown.com/artists/' + bandTitle + '/events?app_id=codingbootcamp').then(function (response) {
-        // name of venue
-        // venue location
-        // date of event formatted with moment as MM/DD/YYYY
+    axios.get('https://rest.bandsintown.com/artists/' + artist + '/events?app_id=codingbootcamp').then(function (response) {
+
+
+        for (var i = 0; i < response.data.length; i++) {
+
+            console.log(response.data[i].venue.name + " " +
+                response.data[i].venue.country + ", " + response.data[i].venue.city + ", " + response.data[i].venue.region + " " +
+                moment(response.data[i].venue.datetime).format("MM/DD/YYYY"))
+
+        }
+
+    }).catch(function (err) {
+        console.log(err)
     })
 }
 
@@ -74,8 +84,8 @@ function getMovie() {
     axios.get('https://www.omdbapi.com/?t=' + movieTitle + '&y=&plot=short&apikey=trilogy').then(function (response) {
         console.log(response.data.Title) // title of the movie
         console.log("Released in " + response.data.Year) // year movie came out
-        console.log("IMDB Rating " + response.data.Ratings[1].Value) // imdb rating
-        console.log("Rotten Tomatoes Rating " + response.data.Ratings[2].Value) // rotten tomatoes rating
+        console.log("IMDB Rating " + response.data.Ratings[i].Value) // imdb rating
+        console.log("Rotten Tomatoes Rating " + response.data.Ratings[1].Value) // rotten tomatoes rating
         console.log("Produced in " + response.data.Country) // country movie was produced
         console.log("Available in " + response.data.Language) // language of movie
         console.log("Plot: " + response.data.Plot) // plot of movie
