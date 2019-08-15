@@ -5,7 +5,7 @@ Welcome to an app based entirely in the command line. No browser needed.
 
 This is a one-stop shop to browse various media and obtain information you're looking for with simple commands.
 
-### developer keys must be obtained seperately
+### developer keys must be obtained separately
 ___
 
 ## Three ways to run the app.
@@ -44,4 +44,9 @@ ___
 
 ## updates pending
 
-* logging every command to the log.txt file
+* add inquirer for more user interactivity (oh no...)
+* idk my bff jill
+
+---
+
+### developed by Kyle McFadden 
