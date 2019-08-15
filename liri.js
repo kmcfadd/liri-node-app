@@ -28,12 +28,13 @@ switch (input) {
     case 'do-what-it-says':
         doThing();
 }
-
+// a function to handle all the error catches when returning promises
 function errorHandler(err) {
     if (err) {
         console.log(err)
     }
 }
+
 // concert-this
 function getConcert() {
 
@@ -51,7 +52,6 @@ function getConcert() {
                     moment(response.data[i].venue.datetime).format("MM/DD/YYYY"))
 
                 console.log(concertData)
-
                 fs.appendFile('log.txt', concertData + '\n', errorHandler)
             }
         })
@@ -82,10 +82,7 @@ function getSong() {
                 "Preview: " + data.tracks.items[0].preview_url + '\n')
 
             console.log(artistData)
-
             fs.appendFile('log.txt', "Artist: " + artistData, errorHandler)
-
-
         })
         .catch(errorHandler)
 }
@@ -114,15 +111,15 @@ function getMovie() {
                 "Actors: " + response.data.Actors + '\n')
 
             console.log(movieData)
-
             fs.appendFile('log.txt', movieData, errorHandler)
-
         })
         .catch(errorHandler)
 }
 
 // do-what-it-says
 function doThing() {
+
+    fs.appendFile('log.txt', 'do-what-it-says \n', errorHandler)
 
     fs.readFile('random.txt', 'utf8', function (err, data) {
         if (err) {
@@ -138,9 +135,13 @@ function doThing() {
                 axios.get('https://rest.bandsintown.com/artists/' + item + '/events?app_id=codingbootcamp')
                     .then(function (response) {
                         for (var i = 0; i < response.data.length; i++) {
-                            console.log(response.data[i].venue.name + " " +
+
+                            var concertData = (response.data[i].venue.name + " " +
                                 response.data[i].venue.country + ", " + response.data[i].venue.city + ", " + response.data[i].venue.region + " " +
                                 moment(response.data[i].venue.datetime).format("MM/DD/YYYY"))
+
+                            console.log(concertData)
+                            fs.appendFile('log.txt', concertData + '\n', errorHandler)
                         }
                     })
                     .catch(errorHandler)
@@ -152,24 +153,32 @@ function doThing() {
                         limit: 1
                     })
                     .then(function (data) {
-                        console.log("Artist: " + data.tracks.items[0].album.artists[0].name) // artist name
-                        console.log("Song: " + data.tracks.items[0].name) // song name
-                        console.log("Album: " + data.tracks.items[0].album.name) // album name
-                        console.log("Preview: " + data.tracks.items[0].preview_url) // preview url 
+
+                        var artistData = ("Artist: " + data.tracks.items[0].album.artists[0].name + '\n' +
+                            "Song: " + data.tracks.items[0].name + '\n' +
+                            "Album: " + data.tracks.items[0].album.name + '\n' +
+                            "Preview: " + data.tracks.items[0].preview_url + '\n')
+
+                        console.log(artistData)
+                        fs.appendFile('log.txt', artistData, errorHandler)
                     })
                     .catch(errorHandler)
                 break
             case 'movie-this':
                 axios.get('https://www.omdbapi.com/?t=' + item + '&y=&plot=short&apikey=trilogy')
                     .then(function (response) {
-                        console.log(response.data.Title) // title of the movie
-                        console.log("Released in " + response.data.Year) // year movie came out
-                        console.log("IMDB Rating " + response.data.Ratings[0].Value) // imdb rating
-                        console.log("Rotten Tomatoes Rating " + response.data.Ratings[1].Value) // rotten tomatoes rating
-                        console.log("Produced in " + response.data.Country) // country movie was produced
-                        console.log("Available in " + response.data.Language) // language of movie
-                        console.log("Plot: " + response.data.Plot) // plot of movie
-                        console.log("Actors: " + response.data.Actors) // actors in movie
+
+                        var movieData = (response.data.Title + '\n' +
+                            "Released in " + response.data.Year + '\n' +
+                            "IMDB Rating " + response.data.Ratings[0].Value + '\n' +
+                            "Rotten Tomatoes Rating " + response.data.Ratings[1].Value + '\n' +
+                            "Produced in " + response.data.Country + '\n' +
+                            "Available in " + response.data.Language + '\n' +
+                            "Plot: " + response.data.Plot + '\n' +
+                            "Actors: " + response.data.Actors + '\n')
+
+                        console.log(movieData)
+                        fs.appendFile('log.txt', movieData, errorHandler)
                     })
                     .catch(errorHandler)
         }
