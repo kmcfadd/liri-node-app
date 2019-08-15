@@ -86,7 +86,7 @@ function getMovie() {
         .then(function (response) {
             console.log(response.data.Title) // title of the movie
             console.log("Released in " + response.data.Year) // year movie came out
-            console.log("IMDB Rating " + response.data.Ratings[i].Value) // imdb rating
+            console.log("IMDB Rating " + response.data.Ratings[0].Value) // imdb rating
             console.log("Rotten Tomatoes Rating " + response.data.Ratings[1].Value) // rotten tomatoes rating
             console.log("Produced in " + response.data.Country) // country movie was produced
             console.log("Available in " + response.data.Language) // language of movie
@@ -145,7 +145,7 @@ function doThing() {
                     .then(function (response) {
                         console.log(response.data.Title) // title of the movie
                         console.log("Released in " + response.data.Year) // year movie came out
-                        console.log("IMDB Rating " + response.data.Ratings[i].Value) // imdb rating
+                        console.log("IMDB Rating " + response.data.Ratings[0].Value) // imdb rating
                         console.log("Rotten Tomatoes Rating " + response.data.Ratings[1].Value) // rotten tomatoes rating
                         console.log("Produced in " + response.data.Country) // country movie was produced
                         console.log("Available in " + response.data.Language) // language of movie
