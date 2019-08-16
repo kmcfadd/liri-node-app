@@ -100,3 +100,87 @@ Artist: Backstreet Boys
 Song: I Want It That Way
 Album: The Hits--Chapter One
 Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=7665ca4753eb46a7b6d63c2fc611b6fe
+do-what-it-says 
+Artist: Backstreet Boys
+Song: I Want It That Way
+Album: The Hits--Chapter One
+Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=7665ca4753eb46a7b6d63c2fc611b6fe
+spotify-this pre-madonna
+Artist: Artist: Zaytoven
+Song: Tea
+Album: Zaytown Sorority, Vol. 2
+Preview: https://p.scdn.co/mp3-preview/6e7c78d3ff10435f319b34c7a1977be88982547b?cid=7665ca4753eb46a7b6d63c2fc611b6fe
+spotify-this hey ya
+Artist: Artist: OutKast
+Song: Hey Ya!
+Album: Speakerboxxx/The Love Below
+Preview: https://p.scdn.co/mp3-preview/5d3194868fad490abeed9804ac9c708bd3109da8?cid=7665ca4753eb46a7b6d63c2fc611b6fe
+concert-this taylor swift
+concert-this taylor swift
+concert-this sugarland
+concert-this third eye blind
+Zilker Metropolitan Park United States, Austin, TX 08/15/2019
+Third Eye Blind United Kingdom, Glasgow,  08/15/2019
+Zilker Metropolitan Park United States, Austin, TX 08/15/2019
+Third Eye Blind United Kingdom, Manchester,  08/15/2019
+Third Eye Blind Ireland, Dublin,  08/15/2019
+Third Eye Blind United Kingdom, London,  08/15/2019
+Third Eye Blind France, Paris,  08/15/2019
+Third Eye Blind Germany, Cologne,  08/15/2019
+Third Eye Blind Netherlands, Amsterdam,  08/15/2019
+Third Eye Blind Norway, Oslo,  08/15/2019
+Third Eye Blind Denmark, Copenhagen,  08/15/2019
+Third Eye Blind Germany, Berlin,  08/15/2019
+Third Eye Blind Sweden, Stockholm,  08/15/2019
+BI NUU Germany, Berlin,  08/15/2019
+Third Eye Blind Germany, Hamburg,  08/15/2019
+concert-this backstreet boys
+Wells Fargo Center United States, Philadelphia, PA 08/15/2019
+Barclays Center United States, New York, NY 08/15/2019
+Hersheypark Stadium United States, Hershey, PA 08/15/2019
+State Farm Arena United States, Atlanta, GA 08/15/2019
+BB&T Center United States, Fort Lauderdale, FL 08/15/2019
+Bridgestone Arena United States, Nashville, TN 08/15/2019
+PNC Arena United States, Raleigh, NC 08/15/2019
+Amway Center United States, Orlando, FL 08/15/2019
+BOK Center United States, Tulsa, OK 08/15/2019
+Smoothie King Center United States, New Orleans, LA 08/15/2019
+American Airlines Arena United States, Dallas, TX 08/15/2019
+Toyota Center United States, Houston, TX 08/15/2019
+FedEx Forum United States, Memphis, TN 08/15/2019
+CAJUNDOME United States, Lafayette, LA 08/15/2019
+Enterprise Center United States, St. Louis, MO 08/15/2019
+Sprint Center United States, Kansas City, MO 08/15/2019
+CHI Health Center Omaha United States, Omaha, NE 08/15/2019
+Bankers Life Fieldhouse United States, Indianapolis, IN 08/15/2019
+The Legacy Arena at the BJCC United States, Birmingham, AL 08/15/2019
+KFC Yum! Center United States, Louisville, KY 08/15/2019
+PPG Paints Arena United States, Pittsburgh, PA 08/15/2019
+Prudential Center United States, Newark, NJ 08/15/2019
+DNA World Tour Japan, Tokyo,  08/15/2019
+Fiserv Forum United States, Milwaukee, WI 08/15/2019
+DNA World Tour Japan, Higashi-osaka,  08/15/2019
+T-Mobile Arena United States, Las Vegas, NV 08/15/2019
+DNA World Tour Taiwan, Taipei,  08/15/2019
+DNA World Tour China, Macau,  08/15/2019
+DNA World Tour Indonesia, Jakarta,  08/15/2019
+DNA World Tour Philippines, Manila,  08/15/2019
+DNA World Tour Japan, Tokyo,  08/15/2019
+DNA World Tour Singapore, Singapore,  08/15/2019
+Neal S. Blaisdell Center United States, Honolulu, HI 08/15/2019
+Neal S Blaisdell Center United States, Honolulu, HI 08/15/2019
+Neal S. Blaisdell Center United States, Honolulu, HI 08/15/2019
+DNA World Tour Thailand, Bangkok,  08/15/2019
+Neal S Blaisdell Center United States, Honolulu, HI 08/15/2019
+concert-this panic at the disco
+Music Midtown (September 14th-15th, Single Day TBA) United States, Atlanta, GA 09/14/2019
+Rock in Rio Brazil, Rio De Janeiro,  10/03/2019
+concert-this arctic monkeys
+concert-this jungle
+Lowlands Festival Netherlands, Biddinghuizen,  08/16/2019
+MS Dockville Germany, Hamburg-nord,  08/17/2019
+Festival King Arthur - Bréal-sous-Montfort, France France, Bréal-sous-montfort,  08/23/2019
+Open Air Festival Switzerland, Zurich,  08/22/2019
+Into The Great Wide Open Festival Netherlands, Oost-vlieland,  08/31/2019
+Rock en Seine France, Saint Cloud,  08/24/2019
+Jungle DJ set at Tokyo World Festival United Kingdom, Bristol,  09/21/2019

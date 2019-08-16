@@ -49,7 +49,7 @@ function getConcert() {
 
                 var concertData = (response.data[i].venue.name + " " +
                     response.data[i].venue.country + ", " + response.data[i].venue.city + ", " + response.data[i].venue.region + " " +
-                    moment(response.data[i].venue.datetime).format("MM/DD/YYYY"))
+                    moment(response.data[i].datetime).format("MM/DD/YYYY"))
 
                 console.log(concertData)
                 fs.appendFile('log.txt', concertData + '\n', errorHandler)
