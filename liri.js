@@ -43,7 +43,14 @@ function getConcert() {
     axios.get('https://rest.bandsintown.com/artists/' + artist + '/events?app_id=codingbootcamp')
         .then(function (response) {
 
+            //console.log(response)
+
             fs.appendFile('log.txt', 'concert-this ' + process.argv.slice(3).join(' ') + '\n', errorHandler)
+
+            if (!response.data.length) {
+                console.log("No concert data found")
+                fs.appendFile('log.txt', 'No concert data found \n', errorHandler)
+            }
 
             for (var i = 0; i < response.data.length; i++) {
 
@@ -52,6 +59,7 @@ function getConcert() {
                     moment(response.data[i].datetime).format("MM/DD/YYYY"))
 
                 console.log(concertData)
+
                 fs.appendFile('log.txt', concertData + '\n', errorHandler)
             }
         })
@@ -178,6 +186,8 @@ function doThing() {
                             "Actors: " + response.data.Actors + '\n')
 
                         console.log(movieData)
+
+
                         fs.appendFile('log.txt', movieData, errorHandler)
                     })
                     .catch(errorHandler)
